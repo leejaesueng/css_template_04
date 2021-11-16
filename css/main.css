@@ -449,5 +449,40 @@ section.sns ul li .img-box:hover::before {
     border: 1px solid white;
     box-sizing: border-box;
     line-height: 30px;
+}
+footer .inner {
+    width: 100%;
+    margin-top: 80px;
+    border-top: 2px solid #000;
+    padding-top: 30px;
+    padding-left: 5%;
+    /* background: orange; */
 
+}
+footer .inner .ft-logo {
+    margin-right: 8% ;
+    /* background: red; */
+    float: left;
+}
+footer .inner .ft-logo li {
+    font-weight: 700;
+}
+footer .inner .ft-logo img {
+    /* background: blue; */
+}
+footer .inner li {
+    font-size: 16px;
+    padding-top: 40px;
+} 
+footer .inner .list>li {
+    float: left;
+}
+footer .inner .address {
+    /* background: red; */
+    margin-right: 10%;
+    float: left;
+}
+footer .inner .list li {
+    float: left;
+    margin-right: 80px;
 }
