@@ -35,6 +35,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10000;
 }
 header .inner-header {
     width: 84%;
@@ -173,16 +174,17 @@ section .main-title .view:hover::after {
 section.about {
     padding: 80px 0;
 }
-section.about .title {
+section .title {
     text-align: center;
 }
-section.about .title h2 {
+section .title h2 {
     font-size: 45px;
     margin-bottom: 5px;
 }
-section.about .title p {
+section .title p {
     font-size: 18px;
     color: #555;
+    margin-bottom: 50px;
 }
 section.about ul {
     width: 74%;
@@ -233,4 +235,143 @@ section.about ul li a .text p.more::before {
     position: absolute;
     left: 0;
     top: -5px;
+}
+
+/* section innovation 영역 */
+
+section.innovation {
+    margin-bottom: 150px;
+}
+
+section.innovation .img-box {
+    width: 74%;
+    height: 540px;
+    background: url('../img/product_1.jpg') no-repeat;
+    margin: 50px auto 0;
+    margin-top: 50px;
+    position: relative;
+}
+section.innovation .img-box .inner {
+    background: #3e3c4e;
+    width: 80%;
+
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, 0%);
+}
+section.innovation .img-box .inner h3 {
+    background: #fff;
+    font-size: 18px;
+    padding: 25px 45px;
+    box-sizing: border-box;
+}
+section.innovation .img-box .inner .bottom {
+    color: #fff;
+    padding: 35px 85px;
+    box-sizing: border-box;
+}
+section.innovation .img-box .inner .bottom p {
+    float: left;
+    width: 70%;
+    line-height: 1.6;
+}
+section.innovation .img-box .inner .bottom a {
+    /* float나 position속성을 걸면 자동으로
+    display가 block속성이 됩니다. */
+    float: right;
+    background: #ff8342;
+    border-radius: 50px;
+    padding: 7px 30px;
+} 
+section.innovation .img-box .inner .bottom a:hover {
+    background: #f86010;
+}
+
+/* section me 영역 */
+section.me {
+    background: url('../img/me.jpg') no-repeat center/cover ;
+    width: 100%;
+    position: relative;
+    padding-bottom: 120px;
+}
+section.me .title {
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+section.me .list {
+    width: 74%;
+    height: 540px;
+    font-size: 18px;
+    /* background: orange; */
+    margin: 0 auto;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    padding-left: 50px;
+
+    position: relative;
+}
+section.me .list h3 {
+    margin-top: 40px;
+}
+section.me .list h3 i {
+    position: absolute;
+    left: 20px;
+    color: #ff8342;
+}
+section.me .list li:last-child a.more {
+    display: block;
+    margin-top: 80px;
+}
+section.me .list p {
+    line-height: 20px;
+    font-size: 15px;
+    margin: 15px 0;
+}
+section.me .list li.clearfix {
+    position: relative;
+}
+section.me .list li.clearfix em {
+    float: left;
+    position: absolute;
+    top: 18px;
+}
+section.me .list li.clearfix p {
+    float: left;
+    margin-left: 200px;
+    position: relative;
+}
+section.me .list li.clearfix p::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ff8342;
+    position: absolute;
+    left: -50px;
+    top: 10px;
+}
+section.me #incruit-btn {
+    display: block;
+    font-weight: 700;
+    background: orange;
+    color: #fff;
+    width: 280px;
+    height: 35px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, 0);
+}
+section.me ul.list > li .more {
+    font-size: 16px;
+    font-weight: 700;
+}
+section.me ul.list > li .more span {
+    color: #ff8342;
+    margin-left: 3px;
+    font-size: 14px;
 }
