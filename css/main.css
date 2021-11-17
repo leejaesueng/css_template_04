@@ -378,15 +378,20 @@ section.me ul.list > li .more span {
 
 /* section sns 영역 */
 section.sns {
+    /* background: red; */
     padding-top: 100px;
     width: 74%;
     margin: 0 auto;
 }
 section.sns ul li {
     float: left;
-    width: 30.3333%;
-    margin-left: 1.5%;
+    width: 31.3333%;
+    margin-left: 3.0%;
     position: relative;
+}
+section.sns ul li:first-child {
+    margin-left: 0;
+    margin-right: 0;
 }
 section.sns ul li .img-box {
     height: 220px;
@@ -409,13 +414,16 @@ section.sns ul li .bottom .color {
 section.sns ul li .bottom .time {
     margin-top: 20px;
     font-size: 14px;
-    color: gray;
+    color: #999;
+}
+section.sns ul li .bottom .time i {
+    padding-right: 10px;
 }
 section.sns ul li .img-box::after {
     content: '';
     display: block;
     width: 0%;
-    height: 220px;
+    height: 100%;
     background: #ff8342;
     opacity: 0;
 
@@ -449,5 +457,7 @@ section.sns ul li .img-box:hover::before {
     border: 1px solid white;
     box-sizing: border-box;
     line-height: 30px;
-
+}
+footer {
+    
 }
